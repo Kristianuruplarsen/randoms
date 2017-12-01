@@ -1,7 +1,8 @@
 using Distributions
 using Plots
+using StatPlots
 
-
+plotlyjs()
 
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #  ---- Exercise 1
@@ -95,24 +96,22 @@ y = data[1]
 
 model = OLS(y,x)
 
+
 plot(x[:, 2],y, seriestype=:scatter,
                title = "Double-censored data\n",
                 markercolor = nothing,
                 markerstrokecolor = "darkblue",
-                markersize = 5,
+                markersize = 4,
                 markerstrokewidth = 0.8,
                 label = "Data")
+
 
 plot!(x[:,2], y- model[2], color ="red", label = "Estimated")
 plot!(x[:,2], x*beta, color = "green", label = "Actual")
 
-savefig("doublecensored.png")
-
-
+#savefig("doublecensored.png")
 
 ####### not done below here
-
-
 
 function MCsim(runs, N, sigma_x, sigma_eps, xlim, ylim, b, limtype = "lower")
 
@@ -124,12 +123,13 @@ function MCsim(runs, N, sigma_x, sigma_eps, xlim, ylim, b, limtype = "lower")
         y = data[1]
         model = OLS(y,x)
 
-        beta_out[runs,:] = model[1]
+        beta_out[i,:] = copy(model[1])
     end
 
     return beta_out
 end
 
 
+betas = MCsim(10000, 1000, 3, 2, 0, 0, beta)
 
-MCsim(10, 1000, 3, 2, 0, 0, beta)
+histogram(betas[:,1], bins = 100)
