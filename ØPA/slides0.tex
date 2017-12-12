@@ -1,0 +1,79 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage[style=authoryear, backend=bibtex8, natbib=true, maxcitenames=2]{biblatex}
+
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+\usepackage{import}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{Opgaver til kapitel 19}
+\subtitle{Handel}
+% \date{\today}
+\date{\today}
+\author{Kristian Olesen Larsen}
+\institute{Department of Economics, University of Copenhagen}
+
+\begin{document}
+\setbeamercolor{background canvas}{bg=white}
+\maketitle
+
+
+
+
+
+
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+
+
+% ------------------------------------------------------------------------------
+% ------ FRAME -----------------------------------------------------------------
+% ------------------------------------------------------------------------------
+\input{opgaver/opgave1}
+
+\input{opgaver/opgave2}
+
+\input{opgaver/opgave3}
+
+\input{opgaver/opgave4}
+
+\input{opgaver/opgave5}
+
+\input{opgaver/opgave6}
+
+\input{opgaver/opgave7}
+
+
+
+\end{document}

@@ -1,0 +1,17 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Opgave 1}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Opgave 2}{10}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Opgave 3}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Opgave 4}{22}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Opgave 5}{24}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Opgave 6}{33}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Opgave 7}{35}{0}{7}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {8}{Opgave 8}{38}{0}{8}
