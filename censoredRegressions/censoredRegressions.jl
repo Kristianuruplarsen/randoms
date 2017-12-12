@@ -2,6 +2,8 @@ using Distributions
 using Plots
 using StatPlots
 
+Pkg.add("Distributions")
+
 plotlyjs()
 
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
