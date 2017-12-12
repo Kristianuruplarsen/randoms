@@ -132,6 +132,6 @@ function MCsim(runs, N, sigma_x, sigma_eps, xlim, ylim, b, limtype = "lower")
 end
 
 
-betas = MCsim(10000, 1000, 3, 2, 0, 0, beta)
+betas = MCsim(100000, 1000, 3, 2, 0, 0, beta)
 
 histogram(betas[:,1], bins = 100)
