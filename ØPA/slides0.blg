@@ -17,13 +17,13 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: slides0-blx.bib
-Biblatex version: 3.3
+Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 1 entry,
-            6256 wiz_defined-function locations,
-            1174 strings with 8524 characters,
-and the built_in function-call counts, 1203 in all, are:
+            6268 wiz_defined-function locations,
+            1177 strings with 8560 characters,
+and the built_in function-call counts, 1205 in all, are:
 = -- 58
 > -- 52
 < -- 1
@@ -37,9 +37,9 @@ change.case$ -- 0
 chr.to.int$ -- 30
 cite$ -- 0
 duplicate$ -- 11
-empty$ -- 86
+empty$ -- 87
 format.name$ -- 0
-if$ -- 265
+if$ -- 266
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 0
